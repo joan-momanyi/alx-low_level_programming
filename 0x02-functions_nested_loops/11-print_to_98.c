@@ -24,9 +24,7 @@ void print_to_98(int n)
 			if (b != 98)
 				printf("%d, ", b);
 			else if (b == 98)
-				printf("%d, ", b);
+				printf("%d\n", b);
 		}
-		for (n == 98)
-			break;
 	}
 }
