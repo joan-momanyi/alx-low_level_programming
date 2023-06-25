@@ -2,16 +2,16 @@
 /**
 *print_sign - prints the sign of a number
 *@n : number to be signed
-*Return: return 1 if its greater than 0, return 0 is its zero, return -1 if its less than 0
+*Return: return 1 if greater than, return -1 if less than 0, return 0 otherwise
 */
 int print_sign(int n)
 {
-	if(n > 0)
+	if (n > 0)
 	{
 		_putchar(43);
 		return (1);
 	}
-	else if(n < 0)
+	else if (n < 0)
 	{
 		_putchar(45);
 		return (-1);
