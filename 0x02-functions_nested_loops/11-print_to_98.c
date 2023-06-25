@@ -2,6 +2,7 @@
 #include "main.h"
 /**
 *print_to_98 - prints all numbers from n to 98
+*@n: numbers to input
 */
 void print_to_98(int n)
 {
