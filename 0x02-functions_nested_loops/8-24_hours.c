@@ -6,7 +6,7 @@
 */
 void jack_bauer(void)
 {
-	int w, x, y ,z;
+	int w, x, y, z;
 
 	for (w = 0; w <= 2; w++)
 	{
@@ -19,7 +19,7 @@ void jack_bauer(void)
 					if (w >= 2 && x >= 4)
 						break;
 					_putchar(w + 48);
-					_putchar(x +48);
+					_putchar(x + 48);
 					_putchar(58);
 					_putchar(y + 48);
 					_putchar(z + 48);
