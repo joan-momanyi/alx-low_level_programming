@@ -26,5 +26,7 @@ void print_to_98(int n)
 			else if (b == 98)
 				printf("%d, ", b);
 		}
+		for (n == 98)
+			break;
 	}
 }
