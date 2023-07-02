@@ -4,7 +4,6 @@
 *@n: integer parameter
 *Return: 0
 */
-
 void rev_string(char *n)
 {
 	int i = 0;
@@ -16,9 +15,8 @@ void rev_string(char *n)
 		i++;
 	}
 	i--;
-	
-	for (j = 0; j < i; j++);
-	i--;
+
+	for (j = 0; j < i; j++, i--)
 	{
 		temp = *(n + j);
 		*(n + j) = *(n + i);
@@ -60,7 +58,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		temp_tot = val1 + val2 + overflow;
 		if (temp_tot >= 10)
 			overflow = 1;
-		else 
+		else
 			overflow = 0;
 		if (digits >= (size_r - 1))
 			return (0);
