@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_strpbrk -  locates the first occurrence in the string
-*@s: input 
+*@s: input
 *@accept: input
 *Return: always 0 (success)
 */
