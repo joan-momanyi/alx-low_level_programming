@@ -3,7 +3,7 @@
 * _strchr -locates a character in a string
 *@s: string input
 *@c: character input
-*Return : always 0 (success)
+*Return: Always 0 (Success)
 */
 char *_strchr(char *s, char c)
 {
