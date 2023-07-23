@@ -20,10 +20,11 @@ int _strlen(char *s)
 	return (i);
 }
 /**
-*_strcpy - copies string from src
-*including the NULL byte to dest
-*@src: pointer to copy from
-*@dest: pointer to copy to
+*_strcpy - copies string pointed to by src
+*including the terminating null byte (\0)
+*to the buffer pointed to by dest
+*@src: string to be copied
+*@dest: pointer to buffer in which we copy the string
 *
 *Return:pointer to dest
 */
@@ -64,12 +65,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
+
 	dog->name = malloc(sizeof(char) * (length1 + 1));
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
+
 	dog->owner = malloc(sizeof(char) * (length2 + 1));
 	if (dog->owner == NULL)
 	{
@@ -77,6 +80,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
+
 	_strcpy(dog->name, name);
 	_strcpy(dog->owner, owner);
 	dog->age = age;
