@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-*print_listsint - prints all elements of listint
+*print_listint - prints all elements of listint
 *@h: linked list of type listint tyo print
 *
 *Return: number of nodes
